@@ -1,0 +1,11 @@
+#env
+.env
+
+# build
+target
+
+# rustfmt
+**/*.rs.bk
+
+# macOS
+.DS_Store

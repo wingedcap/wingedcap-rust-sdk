@@ -1,0 +1,3 @@
+{
+  "notebook.defaultFormatter": "rust-lang.rust-analyzer"
+}
