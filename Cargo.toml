@@ -37,6 +37,7 @@ tokio-tungstenite-wasm = { version = "0.6.0", features = ["native-tls"] }
 tokio = { version = "1.43.0", features = ["sync", "time", "macros", "rt",] }
 wasm-bindgen-futures = "0.4"
 js-sys = "0.3"
+web-sys = { version = "0.3.81", features = [  "Window", "Location" ] }
 
 
 [target.'cfg(not(target_family = "wasm"))'.dependencies]
