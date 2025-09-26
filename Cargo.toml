@@ -33,13 +33,13 @@ gloo-timers = {version = "0.3.0", features = ["futures"] }
 tokio-tungstenite-wasm = { version = "0.6.0", features = ["native-tls"] }
 
 
-[target.'cfg(target_arch = "wasm32")'.dependencies]
+[target.'cfg(target_family = "wasm")'.dependencies]
 tokio = { version = "1.43.0", features = ["sync", "time", "macros", "rt",] }
 wasm-bindgen-futures = "0.4"
 js-sys = "0.3"
 
 
-[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+[target.'cfg(not(target_family = "wasm"))'.dependencies]
 tokio = { version = "1.43.0", features = ["sync", "time", "macros", "rt", "rt-multi-thread"] }
 axum = { version="0.8.4", features = ["ws"] }
 tower-http = { version= "0.6.6", features = ["cors"] }
